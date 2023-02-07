@@ -1,0 +1,16 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About Me",
+    "section": "",
+    "text": "My name is Namyuktha and I am a high school senior."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Census Data Plot",
+    "section": "",
+    "text": "library(tidycensus)\noptions(tigris_use_cache = TRUE)\n\ndc_income <- get_acs(\n  geography = \"tract\", \n  variables = \"B19013_001\",\n  state = \"DC\", \n  year = 2020,\n  geometry = TRUE\n)\n\nGetting data from the 2016-2020 5-year ACS\n\n\n\n  |                                                                            \n  |                                                                      |   0%\n  |                                                                            \n  |==                                                                    |   3%\n  |                                                                            \n  |=========================                                             |  36%\n  |                                                                            \n  |================================                                      |  46%\n  |                                                                            \n  |========================================================              |  80%\n  |                                                                            \n  |======================================================================| 100%\n\nplot(dc_income[\"estimate\"])"
+  }
+]

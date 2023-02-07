@@ -1,0 +1,4 @@
+- source: project
+  quarto-pub:
+    - id: 9f3dc065-4e4b-43e2-bd3a-432bced0b0b8
+      url: 'https://quartopub.com/sites/namyukthap/my-cool-project'
