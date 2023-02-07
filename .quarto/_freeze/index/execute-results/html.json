@@ -1,7 +1,7 @@
 {
-  "hash": "f3a9a4a830eea124a8d460485329a9ef",
+  "hash": "0e4033f7975b6ee6c9712daa90860b6e",
   "result": {
-    "markdown": "---\ntitle: \"Census Data Plot\"\n---\n\n::: {.cell}\n\n```{.r .cell-code}\nlibrary(tidycensus)\noptions(tigris_use_cache = TRUE)\n\ndc_income <- get_acs(\n  geography = \"tract\", \n  variables = \"B19013_001\",\n  state = \"DC\", \n  year = 2020,\n  geometry = TRUE\n)\n```\n\n::: {.cell-output .cell-output-stderr}\n```\nGetting data from the 2016-2020 5-year ACS\n```\n:::\n\n::: {.cell-output .cell-output-stdout}\n```\n\n  |                                                                            \n  |                                                                      |   0%\n  |                                                                            \n  |==                                                                    |   3%\n  |                                                                            \n  |=========================                                             |  36%\n  |                                                                            \n  |================================                                      |  46%\n  |                                                                            \n  |========================================================              |  80%\n  |                                                                            \n  |======================================================================| 100%\n```\n:::\n\n```{.r .cell-code}\nplot(dc_income[\"estimate\"])\n```\n\n::: {.cell-output-display}\n![](index_files/figure-html/unnamed-chunk-1-1.png){width=672}\n:::\n:::\n",
+    "markdown": "---\ntitle: \"Census Data Plot\"\n---\n\n::: {.cell}\n::: {.cell-output-display}\n![](index_files/figure-html/unnamed-chunk-1-1.png){width=672}\n:::\n:::\n",
     "supporting": [
       "index_files"
     ],

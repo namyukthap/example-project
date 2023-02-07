@@ -3,6 +3,8 @@ title: "Census Data Plot"
 ---
 
 ```{r}
+#| echo: false
+#| message: false
 library(tidycensus)
 options(tigris_use_cache = TRUE)
 
